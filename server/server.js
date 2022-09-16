@@ -3,14 +3,11 @@ const express = require('express')
 const app = express()
 app.use(express.json())
 
-app.get('/', (req, res) => {
-  console.log('get')
-  res.send('Hello World!1')
-})
-
 app.post('/', (req, res) => {
-  console.log('post', req.body, req.params)
-  res.send('Hello World!1')
+  console.log('recieved stolen data: ', req.body)
+  res.status(201).json({
+    status: 'OK',
+  })
 })
 
 app.listen(3000, () => {
