@@ -1,0 +1,5 @@
+keyloggermain.spec
+keylogger/build/
+keylogger/dist/
+keylogger/data.txt
+server/node_modules/
