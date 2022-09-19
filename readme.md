@@ -16,5 +16,6 @@ cd ./server && node server.js
 And then run a keylogger
 
 ```
-cd ../keylogger && python main.py
+cd ./keylogger && python main.py
 ```
+![Stolen conversation from messanger](https://user-images.githubusercontent.com/45974414/191115725-8d4afccc-6175-4f57-94ba-22a2fc098262.gif)
